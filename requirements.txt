@@ -1,0 +1,8 @@
+pytest>=7.0
+
+# Optional: only needed if you want the real LLM-backed suggestion path in
+# a11y_agent.suggest.suggest_fix_with_llm. Without it (or without
+# ANTHROPIC_API_KEY set), that function transparently falls back to a
+# deterministic template - the scanner and --suggest-fix work fully
+# without this dependency.
+# anthropic>=0.30
